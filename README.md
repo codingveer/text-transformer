@@ -1,7 +1,7 @@
 An empty selection for a text parser
 ========================
 
-If you want to solve the problem in PHP, this repo contains an already prepared sceleton for a
+If you want to solve the problem in PHP, this repo contains an already prepared selection for a
 php app. If you want to use a different language, feel free to do so. 
 
 Visit below link to  make it run

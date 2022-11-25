@@ -7,7 +7,7 @@ class TextTransform extends TransformationFilters {
   }
 
   
-  transform() {
+  tranform() {
     this.getHashTags(); 
     this.getPriority();
     this.getDateFromStr();
@@ -17,19 +17,18 @@ class TextTransform extends TransformationFilters {
 }
 
 
+const testData1 = "Grammys birthday 15.02.1940";
+const testData2 = "Remind me to buy shoes in two days";
+const testData3 = "Buy some coffee tomorrow";
+const testData4 = "Soccer game won yesterday";
+const testData5 = "Let's do a vacation #yay";
+const testData6 = "Buy cheese !p1";
+const testData7 = "!p2 Buy sausages";
+const testData8 = "Buy some #ilikecheese cheese tomorrow !p1";
 
-const transformer = (inputData) =>{
-  let inputText = new TextTransform(inputData);
-   inputText.transform();
-  console.log(inputText.transformedData)
-  return inputText.transformedData
-}
-
-
-export default transformer;
-
-
-//console.log(JSON.stringify(inputText.transformedData), '----------')
+const inputText = new TextTransform(testData8);
+inputText.tranform()
+console.log(JSON.stringify(inputText.transformedData), 'Result of transformed text')
 
 
 

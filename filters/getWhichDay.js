@@ -7,10 +7,9 @@ const getWhichDay = (inputText) => {
     return
   }
   const transformedText = inputText?.replace(/(Today|tomorrow|Yesterday)/gi,'');
-  const covertredDate = addDays(result[0].toLowerCase());
-  console.log(covertredDate,'_________________ dta')
+  const convertedDate = addDays(result[0].toLowerCase());
    const date = {
-        date: covertredDate
+        date: convertedDate
     };
    const response = {
       transformedText,
